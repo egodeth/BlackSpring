@@ -11,14 +11,24 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
+      position: relative; /* allows absolute positioning inside */
     }
     img {
       max-width: 80%;
       max-height: 80%;
     }
+    .top-left-text {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-family: Arial, sans-serif;
+      font-size: 10pt;
+      color: black;
+    }
   </style>
 </head>
 <body>
+  <div class="top-left-text">Robert Adrian Scharlach</div>
   <img src="flux_krea_00005_.png" alt="My Image">
 </body>
 </html>
